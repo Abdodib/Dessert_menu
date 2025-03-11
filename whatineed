@@ -47,3 +47,24 @@
 
   Your Cart (<!-- Quantity -->)
   Your added items will appear here
+
+
+
+   document.querySelectorAll(".btn2").forEach((btnContainer) => {
+    let countElement = btnContainer.querySelector("p"); // عنصر العداد داخل كل btn2
+    let count = parseInt(countElement.textContent); // تحويل النص إلى رقم
+
+    btnContainer.querySelector("img:first-child").addEventListener("click", () => {
+        count++;
+        countElement.textContent = count;
+    });
+
+    btnContainer.querySelector("img:last-child").addEventListener("click", () => {
+        if (count > 0) {
+            count--;
+            countElement.textContent = count;
+        } else {
+            alert("Impossible de descendre en dessous de zéro !");
+        }
+    });
+});

@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="index.css">
+  <script src="./index.js"> </script>
   <title>Frontend Mentor | Product list with cart</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -13,148 +14,277 @@
 </head>
 <body>
 
-  <div class="main">
-    <h1>Desserts</title>
-  <div class="container">
-  <div class="menu">
-  <div class="produit">
-    <img src="" alt="">
-    <div class="addto">
-      <img src="./assets/images/image-waffle-thumbnail.jpg" alt="">
-      <p>Add to Cart</p>
-    </div>
-    <p id="name">waffle</p>
-    <p id="description">waffle with BErries</p>
-    <p id="price">$6.5</p>
-  </div>
-  </div>
-  </div>
-  <!-------------------->
-  <div class="container">
+  <div class="Desert">
+    <div class="main">
+      <h1>Desserts</h1>
     <div class="menu">
-    <div class="produit">
-      <img src="" alt="">
-      <div class="addto">
-        <img src="./assets/images/image-brownie-thumbnail.jpg" alt="">
-        <p>Add to Cart</p>
-      </div>
-      <p id="name"> Crème Brûlée</p>
-      <p id="description"> Vanilla Bean Crème Brûlée</p>
-      <p id="price">$7.00</p>
-    </div>
-    </div>
-    </div>
-    <!-------------------->
-    <div class="container">
-      <div class="menu">
-      <div class="produit">
-        <img src="" alt="">
-        <div class="addto">
-          <img src="./assets/images/image-macaron-thumbnail.jpg" alt="">
-          <p>Add to Cart</p>
-        </div>
-        <p id="name">Macaron</p>
-        <p id="description">Macaron Mix of Five</p>
-        <p id="price">$8.00</p>
-      </div>
-      </div>
-      </div>
-      <!-------------------->
-      <div class="container">
-        <div class="menu">
+      <div class="colum">
         <div class="produit">
           <img src="" alt="">
           <div class="addto">
-            <img src="./assets/images/image-waffle-thumbnail.jpg" alt="">
-            <p>Add to Cart</p>
+            <img src="./assets/images/image-waffle-desktop.jpg" alt="" class="img">
+            <div class="btn1"  onclick="hide(this)">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" style="width: 18px; height: 15px">
+                <p >Add to Cart</p>
+            
+              </div>
+              <div class="btn2">
+                <img src="./assets/images/icon-increment-quantity.svg" alt="" style="width: 10px;">
+                <p>1</p>
+                <img src="./assets/images/icon-decrement-quantity.svg" alt="" style="width: 10px;">
+                
+              </div>
+          </div>
+          <p id="name">waffle</p>
+          <p id="description">waffle with BErries</p>
+          <p id="price">$6.5</p>
+        </div>
+        <div class="produit">
+          <img src="" alt="">
+          <div class="addto">
+            <img src="./assets/images/image-macaron-desktop.jpg" alt="" class="img">
+            <div class="btn1"  onclick="hide(this)">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" style="width: 18px; height: 15px">
+                <p >Add to Cart</p>
+            
+              </div>
+              <div class="btn2">
+                <img src="./assets/images/icon-increment-quantity.svg" alt="" style="width: 10px;">
+                <p >1</p>
+                <img src="./assets/images/icon-decrement-quantity.svg" alt="" style="width: 10px;">
+                
+              </div>
+          </div>
+          <p id="name">Macaron</p>
+          <p id="description">Macaron Mix of Five</p>
+          <p id="price">$8.00</p>
+        </div>
+        <div class="produit">
+          <img src="" alt="">
+          <div class="addto">
+            <img src="./assets/images/image-tiramisu-desktop.jpg" alt="" class="img">
+            <div class="btn1"  onclick="hide(this)">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" style="width: 18px; height: 15px">
+                <p >Add to Cart</p>
+            
+              </div>
+              <div class="btn2">
+                <img src="./assets/images/icon-increment-quantity.svg" alt="" style="width: 10px;">
+                <p >1</p>
+                <img src="./assets/images/icon-decrement-quantity.svg" alt="" style="width: 10px;">
+                
+              </div>
           </div>
           <p id="name">Tiramisu</p>
           <p id="description"> Classic Tiramisu</p>
           <p id="price">$5.50</p>
         </div>
+      </div>
+      <div class="colum">
+        <div class="produit">
+          <img src="" alt="">
+          <div class="addto">
+            <img src="./assets/images/image-baklava-desktop.jpg" alt="" class="img">
+            <div class="btn1"  onclick="hide(this)">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" style="width: 18px; height: 15px">
+                <p >Add to Cart</p>
+            
+              </div>
+              <div class="btn2">
+                <img src="./assets/images/icon-increment-quantity.svg" alt="" style="width: 10px;">
+                <p >1</p>
+                <img src="./assets/images/icon-decrement-quantity.svg" alt="" style="width: 10px;">
+                
+              </div>
+          </div>
+          <p id="name">Baklava</p>
+          <p id="description">  Pistachio Baklava</p>
+          <p id="price">4.00</p>
         </div>
-        </div>
-        <!-------------------->
-        <div class="container">
-          <div class="menu">
+        
           <div class="produit">
             <img src="" alt="">
             <div class="addto">
-              <img src="./assets/images/image-baklava-thumbnail.jpg" alt="">
-              <p>Add to Cart</p>
+              <img src="./assets/images/image-meringue-desktop.jpg" alt="" class="img">
+              <div class="btn1"  onclick="hide(this)">
+                <img src="./assets/images/icon-add-to-cart.svg" alt="" style="width: 18px; height: 15px">
+                  <p >Add to Cart</p>
+              
+                </div>
+                <div class="btn2">
+                  <img src="./assets/images/icon-increment-quantity.svg" alt="" style="width: 10px;" >
+                  <p >1</p>
+                  <img src="./assets/images/icon-decrement-quantity.svg" alt="" style="width: 10px;" >
+                  
+                </div>
             </div>
-            <p id="name">Baklava</p>
-            <p id="description">  Pistachio Baklava</p>
-            <p id="price">4.00</p>
+            <p id="name"> Pie</p>
+            <p id="description">Lemon Meringue Pie</p>
+            <p id="price">5.00</p>
           </div>
+          <div class="produit">
+            <img src="" alt="">
+            <div class="addto">
+              <img src="./assets/images/image-cake-desktop.jpg" alt="" class="img">
+              <div class="btn1"  onclick="hide(this)">
+                <img src="./assets/images/icon-add-to-cart.svg" alt="" style="width: 18px; height: 15px">
+                  <p >Add to Cart</p>
+              
+                </div>
+                <div class="btn2">
+                  <img src="./assets/images/icon-increment-quantity.svg" alt="" style="width: 10px;" >
+                  <p >1</p>
+                  <img src="./assets/images/icon-decrement-quantity.svg" alt="" style="width: 10px;">
+                  
+                </div>
+            </div>
+            <p id="name">Cake</p>
+            <p id="description">Red Velvet Cake</p>
+            <p id="price">4.50</p>
           </div>
+      </div>
+      <div class="colum">
+        <div class="produit">
+          <img src="" alt="">
+          <div class="addto">
+            <img src="./assets/images/image-brownie-desktop.jpg" alt="" class="img">
+            <div class="btn1"  onclick="hide(this)">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" style="width: 18px; height: 15px">
+                <p >Add to Cart</p>
+            
+              </div>
+              <div class="btn2">
+                <img src="./assets/images/icon-increment-quantity.svg" alt="" style="width: 10px;" >
+                <p >1</p>
+                <img src="./assets/images/icon-decrement-quantity.svg" alt="" style="width: 10px;" >
+                
+              </div>
           </div>
-          <!-------------------->
-          <div class="container">
-            <div class="menu">
-            <div class="produit">
-              <img src="" alt="">
-              <div class="addto">
-                <img src="./assets/images/image-meringue-thumbnail.jpg" alt="">
-                <p>Add to Cart</p>
+          <p id="name">Brownie</p>
+          <p id="description">Salted Caramel Brownie</p>
+          <p id="price">4.50</p>
+        </div>
+        <div class="produit">
+          <img src="" alt="">
+          <div class="addto">
+            <img src="./assets/images/image-panna-cotta-desktop.jpg" alt="" class="img">
+            <div class="btn1"  onclick="hide(this)" >
+              
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" style="width: 18px; height: 15px">
+                <p >Add to Cart</p>
+            
               </div>
-              <p id="name"> Pie</p>
-              <p id="description">Lemon Meringue Pie</p>
-              <p id="price">5.00</p>
+              <div class="btn2">
+                <img src="./assets/images/icon-increment-quantity.svg" alt="" style="width: 10px;" >
+                <p >1</p>
+                <img src="./assets/images/icon-decrement-quantity.svg" alt="" style="width: 10px;" >
+                
+              </div>
+          </div>
+          <p id="name">Panna Cotta</p>
+          <p id="description"> Vanilla Panna Cotta</p>
+          <p id="price"> 6.50</p>
+        </div>
+        <div class="produit">
+          <img src="" alt="">
+          <div class="addto">
+            <img src="./assets/images/image-brownie-desktop.jpg" alt="" class="img">
+            <div class="btn1"    onclick="hide(this)">
+            <img src="./assets/images/icon-add-to-cart.svg" alt="" style="width: 18px; height: 15px">
+              <p >Add to Cart</p>
+          
             </div>
+            <div class="btn2" >
+              <img src="./assets/images/icon-increment-quantity.svg" alt="" style="width: 10px;">
+              <p >1</p>
+              <img src="./assets/images/icon-decrement-quantity.svg" alt="" style="width: 10px;">
+              
             </div>
-            </div>
-            <!-------------------->
-            <div class="container">
-              <div class="menu">
-              <div class="produit">
-                <img src="" alt="">
-                <div class="addto">
-                  <img src="./assets/images" alt="">
-                  <p>Add to Cart</p>
-                </div>
-                <p id="name">Cake</p>
-                <p id="description">Red Velvet Cake</p>
-                <p id="price">4.50</p>
-              </div>
-              </div>
-              </div>
-              <!-------------------->
-              <div class="container">
-                <div class="menu">
-                <div class="produit">
-                  <img src="" alt="">
-                  <div class="addto">
-                    <img src="./assets/images" alt="">
-                    <p>Add to Cart</p>
-                  </div>
-                  <p id="name">Brownie</p>
-                  <p id="description">Salted Caramel Brownie</p>
-                  <p id="price">4.50</p>
-                </div>
-                </div>
-                </div>
-                <!-------------------->
-                <div class="container">
-                  <div class="menu">
-                  <div class="produit">
-                    <img src="" alt="">
-                    <div class="addto">
-                      <img src="./assets/images" alt="">
-                      <p>Add to Cart</p>
-                    </div>
-                    <p id="name">Panna Cotta</p>
-                    <p id="description"> Vanilla Panna Cotta</p>
-                    <p id="price"> 6.50</p>
-                  </div>
-                  </div>
-                  </div>
-                  <!-------------------->
+          </div>
+          <p id="name"> Crème Brûlée</p>
+          <p id="description"> Vanilla Bean Crème Brûlée</p>
+          <p id="price">$7.00</p>
+        </div>
+      </div>
+    
+    
+      
+    </div>
+    </div>
+    <!-------------------->
+    
+      
+      
+      
+      
+    
+  <div class="cart">
+    <p>your cart (0)</p>
+    <img src="./assets/images/illustration-empty-cart.svg" alt="">
+    <h6>your added items will appear here</h6>
+  </div>  
   </div>
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
+
+
+<script>
+  document.querySelectorAll(".btn2").forEach((btnContainer) => {
+    let countElement = btnContainer.querySelector("p"); // عنصر العداد داخل كل btn2
+    let count = parseInt(countElement.textContent); // تحويل النص إلى رقم
+
+    btnContainer.querySelector("img:first-child").addEventListener("click", () => {
+        count++;
+        countElement.textContent = count;
+    });
+
+    btnContainer.querySelector("img:last-child").addEventListener("click", () => {
+        if (count > 0) {
+            count--;
+            countElement.textContent = count;
+        }
+        if(count == 0) {
+          inversehide(event.target);
+          
+        } 
+    });
+});
+
+function hide(divv) {
+  let produitDiv = divv.closest(".produit"); // العثور على أقرب div بـ .produit
+ // عنصر الصورة داخل div .produit
+  if (!produitDiv) return; // تأكد أن العنصر موجود
+
+  let btn1 = produitDiv.querySelector(".btn1");
+  let btn2 = produitDiv.querySelector(".btn2");
+  let produitImg = produitDiv.querySelector(".img");
+  if (btn1 && btn2 && produitImg) {
+      btn1.style.display = "none";
+      btn2.style.display = "flex";
+      produitImg.style.border = "5px solid #c73a0f";
+  }
+}
+
+function inversehide(divv) {
+  let produitDiv = divv.closest(".produit"); // العثور على أقرب div بـ .produit
+ // عنصر الصورة داخل div .produit
+  if (!produitDiv) return; // تأكد أن العنصر موجود
+
+  let btn1 = produitDiv.querySelector(".btn1");
+  let btn2 = produitDiv.querySelector(".btn2");
+  let produitImg = produitDiv.querySelector(".img");
+  if (btn1 && btn2 && produitImg) {
+      btn1.style.display = "flex";
+      btn2.style.display = "none";
+      produitImg.style.border = "none";
+  }
+}
+
+
+  
+</script>
 </html>

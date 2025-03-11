@@ -1,2 +1,152 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: 11px; text-align: center; margin-top: 100px;}
+.attribution a { color: hsl(228, 45%, 44%);
+ }
+*{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(235, 201, 186);
+}
+
+.Desert{
+    display: flex;
+    
+    gap: 25px;
+    align-items: baseline;
+    justify-content: space-around
+
+}
+.menu{
+    display: flex;
+   flex-direction: column;
+ width:250 px;
+ gap: 50px;
+   
+    
+
+}
+.colum{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: baseline;
+    justify-content: center;
+
+    font-size: medium;
+}
+.produit{
+    width:200px;
+    height: 280px; 
+        padding-right: 25px
+}
+.produit img{
+    width: 100%;
+border-radius: 15px;
+
+
+}
+#name{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size:small;
+    font-style: italic;
+    font-weight: bolder;
+    opacity: 80%;
+}
+#description{
+    margin: 5px 0px;
+}
+.addto{
+    position: relative;
+}
+.btn1{
+    display: flex;
+    cursor: pointer;
+    width: 70%;
+    position: absolute;
+    top: 87%;
+    left: 25px;
+    right: 25px;
+    height: 40px;
+    margin: 3px 5px 7px 0px;
+    align-items: center;
+    justify-content: space-around;
+border-radius: 30px;
+border: 2px solid ;
+border-color: rgb(194, 110, 96);
+background-color: white;
+}
+.btn1 img{
+    background: none;
+
+}
+.btn1 p{
+    background: none;
+}
+.btn2 p{
+    background: none;
+}
+.btn2{
+    display: flex;
+ 
+    width: 70%;
+    position: absolute;
+    top: 87%;
+    left: 25px;
+    right: 25px;
+    height: 40px;
+    margin: 3px 5px 7px 0px;
+    align-items: center;
+    justify-content: space-around;
+border-radius: 30px;;
+display: none;
+background-color:  rgb(192, 61, 38);
+}
+.btn2 img{
+    background: none;
+    cursor: pointer; 
+  
+    padding: 4px 4px;
+    border-radius: 100%;
+}
+.btn2 img:active{
+    background-color: #c5645d;
+}
+#count{
+    background: none;
+}
+.btn1:hover {
+    background-color:  rgb(167, 85, 70); /* Change this to your desired color */
+}
+.cart{
+    border-radius: 25px;
+    width: 400px;
+   
+    background-color: white;
+}
+.cart img{
+    height: 200px;
+    padding-left: 78px;
+    width: auto;
+    background: none;
+}
+.cart p{
+    color: crimson;
+    font-weight: bold;
+    background: none;
+    padding-left: 10px;
+    margin-top: 10px;
+    
+}
+.cart h6{
+    padding-left: 57px;
+    color: rgb(173, 76, 76);
+    background: none;
+    font-size: small;
+}
+@media only screen and (max-width: 600px) {
+    .Desert{
+        flex-wrap: wrap;
+    }
+    .colum{
+        flex-direction: column;
+    }
+}
