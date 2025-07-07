@@ -1,14 +1,16 @@
-.attribution { font-size: 11px; text-align: center; margin-top: 100px;}
+.attribution { font-size: 11px; text-align: center; padding-top: 100px;
+    background-color: hsl(20, 50%, 98%);}
 .attribution a { color: hsl(228, 45%, 44%);
  }
 *{
-    font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(235, 201, 186);
+   font-family: 'Red Hat Text' , sans-serif;
+    
+    
 }
 
 .Desert{
     display: flex;
-    
+    background-color: hsl(20, 50%, 98%);
     gap: 25px;
     align-items: baseline;
     justify-content: space-around
@@ -20,7 +22,7 @@
  width:250 px;
  gap: 50px;
    
-    
+ background-color: hsl(20, 50%, 98%);
 
 }
 .colum{
@@ -29,18 +31,19 @@
     
     align-items: baseline;
     justify-content: center;
-
+    background-color: hsl(20, 50%, 98%);
     font-size: medium;
 }
 .produit{
     width:200px;
     height: 280px; 
-        padding-right: 25px
+        padding-right: 25px;
+        background-color: hsl(20, 50%, 98%);
 }
 .produit img{
     width: 100%;
 border-radius: 15px;
-
+background-color: hsl(20, 50%, 98%);
 
 }
 #name{
@@ -50,6 +53,7 @@ border-radius: 15px;
     font-style: italic;
     font-weight: bolder;
     opacity: 80%;
+    background-color: hsl(20, 50%, 98%);
 }
 #description{
     margin: 5px 0px;
@@ -117,6 +121,7 @@ background-color:  rgb(192, 61, 38);
     background-color:  rgb(167, 85, 70); /* Change this to your desired color */
 }
 .cart{
+    background-color: hsl(13, 31%, 94%);
     border-radius: 25px;
     width: 400px;
    
@@ -142,6 +147,42 @@ background-color:  rgb(192, 61, 38);
     background: none;
     font-size: small;
 }
+#total{
+    background: none;
+}
+.list{
+    background: none;
+    
+}
+.cart-item{
+    background: none;
+
+}
+.info{
+    background: none;
+
+}
+.qp{
+    background: none;
+}
+.name{
+    background: none;
+}
+.quantity{
+    background: none;
+}
+.prix{
+    background: none;
+}
+.total{
+    background: none;
+}
+
+.remove{
+    background: none;
+}
+
+
 @media only screen and (max-width: 600px) {
     .Desert{
         flex-wrap: wrap;
